@@ -24,26 +24,19 @@ const imageData = ()=>{
 }
 
 function App() {
-  // code here
-//  const images=imageData();
-//  return (
-//    <div>
-//      {images.map(image => (
-//        <img key={image.id} src={image.img} alt={`Image ${img.id}`} />
-//      ))}
-//    </div>
-//  );
+ 
 
-  const images = imageData(); // Get the array of image objects
+  const images = imageData(); 
 
   return (
     <div>
-      <img key={images[0].id} src={images[0].img} alt={`Image ${images[0].id}`} />
-      <img key={images[1].id} src={images[1].img} alt={`Image ${images[1].id}`} />
-      <img key={images[2].id} src={images[2].img} alt={`Image ${images[2].id}`} />
-      <img key={images[3].id} src={images[3].img} alt={`Image ${images[2].id}`} />
+      <h1>Kalvium Gallery</h1>
+      <img key={images[0].id} src={images[0].img} alt="" />
+      <img key={images[1].id} src={images[1].img} alt="" />
+      <img key={images[2].id} src={images[2].img} alt="" />
+      <img key={images[3].id} src={images[3].img} alt="" />
     </div>
-  );
+  );git
 }
 
 export default App;
