@@ -1,4 +1,30 @@
 /* add your styles here */
 *{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    box-sizing: border-box;
     background-color: antiquewhite;
+
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height:1000px;
+    width:1000px;
+    align-items: center;
+}
+
+.img{
+    display:flex;
+     margin:100px;
+     
+}
+.img1{
+    margin:100px;
+
+}
+.img2{
+    margin-top: 100px;
 }
