@@ -3,7 +3,7 @@ import "./App.css"
 import elephant from "./images/elephant.jpeg";
 
 export default class AppClass extends Component{
-  render(){
+  
   imageData = ()=>{
     let data = [
       {
@@ -23,15 +23,28 @@ export default class AppClass extends Component{
         img:elephant
       }
     ]
+    return data;
+  }
+  
+  render(){
+    const images=this.imageData();
     return (
-      <div>
-        <img key={images[0].id} src={images[0].image} alt={`Image ${images[0].id}`} />
-        <img key={images[1].id} src={images[1].image} alt={`Image ${images[1].id}`} />
-         <img key={images[2].id} src={images[2].image} alt={`Image ${images[2].id}`} />
-         <img key={images[3].id} src={images[3].image} alt={`Image ${images[3].id}`} />
+      <div className='app'>
+      <h1 className='kalvium'>Kalvium Gallery</h1>
+     
+        <div className='img'>
+
+<div className='img1'>
+        <img key={images[0].id} src={images[0].img} height={500} />
+        <img key={images[1].id} src={images[1].img} height={500} />
+        </div>
+        <div className='img2'>
+          <img key={images[2].id} src={images[2].img} height={500} />
+         <img key={images[3].id} src={images[3].img}  height={500} />
+      </div>
+    </div>
       </div>
     );
-  }
   }
   
 }
